@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>history</title>
+    <meta content="text/javascript" charset="UTF-8">
+</head>
+<body>
+    <input type="text" id="tid">
+    <input type="text" id="tid1" value="test">
+    <button onclick="document.write('pressed')">按钮</button>
+    <script type="text/javascript">
+//        function howManyArgs() {
+//            alert(arguments.length)
+//            if (arguments.length > 0) {
+//                for (var i=0; i<arguments.length; i++) {
+//                    alert(arguments[i])
+//                }
+//            }
+//        }
+//        howManyArgs('this','is')
+//        howManyArgs('hehe','Hello', 'World')
+//        howManyArgs()
+//        var doAdd = new Function("iNum", "alert(iNum + 10)");
+//        var doAdd = new Function("iNum", "alert(iNum + 20)");
+//        doAdd(10);
+
+//        function callAnotherFunc(fnFunction, vArgument) {
+////            fnFunction(vArgument);
+//            alert(vArgument + fnFunction(vArgument))
+//        }
+//
+//        var doAdd = new Function("iNum", "alert(iNum + 10);return iNum+10");
+//
+//        callAnotherFunc(doAdd, 10);
+//        document.write(callAnotherFunc.toString())
+//闭包
+//        var iBaseNum = 10;
+//
+//        function addNum(iNum1, iNum2) {
+//          function doAdd() {
+//            return iNum1 + iNum2 + iBaseNum;
+//          }
+//          return doAdd();
+//        }
+//        alert('4' + 4)
+//        document.write(addNum(10,12);
+//           var r =  confirm('really?')
+//        if(r==true) {
+//               document.write("<p id='pid'></p>")
+//               document.getElementById('pid').innerHTML = 'yes'
+//        } else {
+//               document.getElementById('tid').value = 'no'
+//        }
+//
+        var iNum = 0;
+
+    outermost:
+        for (var i=0; i<10; i++) {
+          for (var j=0; j<10; j++) {
+            if (i == 5 && j == 5) {
+            break outermost;
+          }
+          iNum++;
+          }
+        }
+
+//    alert(iNum);
+    </script>
+</body>
+</html>

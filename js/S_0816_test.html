@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        alert(sum(1,2))
+        var name = 'ttt'
+        var color = [1,5,8,9,65,4];
+        var someRst = color.some(function (item, index, array) {
+            return index > 3 && item >2
+        })
+
+        var filterRst = color.filter(function (item, index, array) {
+//            alert(array)
+            return index > 3 && item >2
+        })
+
+        color.forEach(function (item, index, array) {
+            item += 2;
+            array[index] = item
+//            alert(item + " " + index);
+        })
+
+        function sum(num1, num2) {
+            return num1 + num2;
+        }
+    </script>
+
+</body>
+</html>

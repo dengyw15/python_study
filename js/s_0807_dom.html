@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>dom学习</title>
+    <meta content="text/javascript" charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="div" id="div">Hello</div>
+    <button onclick="demo()">变色</button>
+    <button id="btn">句柄测试按钮</button>
+    <p name="pn">Hello</p>
+    <p name="pn">Hello</p>
+    <p name="pn">Hello</p>
+    <p name="pn">Hello</p>
+    <a href="http://www.baidu.com" id="aid" title="a标签的属性">Hi</a>
+    <script type="text/javascript">
+//        document.write('hello world')
+        function getName() {
+            var ps = document.getElementsByTagName('p');
+            ps[2].innerHTML = 'World'
+            alert(ps)
+        }
+
+        function getAttr() {
+            var anode = document.getElementById('aid');
+            var att = anode.getAttribute('href')
+//            var att = anode.getElementById('aid').href
+            var titel = document.getElementById('aid').title = 'reset'
+            alert(anode)
+            closeWin();
+            openWin()
+        }
+        getAttr()
+        function demo() {
+            document.getElementById('div').style.background = 'yellow'
+            document.getElementById('div').style.color = 'red'
+        }
+
+        document.getElementById('btn').addEventListener('click',function () {
+            alert('test')
+        })
+
+        function closeWin() {
+            window.close();
+        }
+
+        function openWin() {
+            window.open('www.baidu.com')
+        }
+    </script>
+</body>
+</html>

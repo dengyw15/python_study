@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>计时器</title>
+    <meta content="text/javascript" charset="UTF-8">
+</head>
+<body>
+    <p id="pid"></p>
+    <button onclick="myWin()">stoptime</button>
+    <script type="text/javascript">
+        var mytime = setInterval(function () {
+            getTime();
+        }, 1000)
+
+        function getTime() {
+            var d = new Date();
+            var t = d.toLocaleTimeString();
+            document.getElementById('pid').innerHTML = t
+        }
+
+        function stopTime() {
+            clearInterval(mytime)
+        }
+
+        var win;
+        function myWin() {
+            alert('Hello');
+            win = setTimeout(function () {
+                alert('world')
+            }, 3000)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="jdk" jdkName="Python 3.6.1 (G:\Program Files (x86)\Python\Python36\python.exe)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="scrapytest" />
+    <orderEntry type="module" module-name="eipnews" />
+    <orderEntry type="module" module-name="webofscience" />
+    <orderEntry type="module" module-name="wos" />
+    <orderEntry type="module" module-name="ccblib" />
+    <orderEntry type="module" module-name="手机APP" />
+  </component>
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
+  </component>
+</module>

@@ -1,0 +1,51 @@
+<!--子类和父类元素是同一类事件的时候 才会有事件冒泡-->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>事件冒泡</title>
+    <meta content="text/javascript" charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="div" class="div">
+        <button id="btn">按钮</button>
+        <a href="http://www.baidu.com" id="aid">ttt</a>
+    </div>
+
+    <div id="outdiv" style="background:yellow; width: 100px; height: 100px;">
+        <div id="innerdiv" style="background: blue;width: 50px; height: 50px"></div>
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById('btn').addEventListener('click', demo);
+        document.getElementById('aid').addEventListener('click', demo1)
+        document.getElementById('div').addEventListener('click', demo2);
+
+        document.getElementById('outdiv').addEventListener('click', outclick);
+        document.getElementById('innerdiv').addEventListener('click', innerclick);
+        function demo(event) {
+            alert(event.target);
+//            event.stopPropagation();
+        }
+
+        function demo1(event) {
+            alert('demo1')
+        }
+
+        function demo2() {
+            alert('demo2')
+        }
+
+        function outclick() {
+            alert('this is out div')
+        }
+
+        function innerclick(event) {
+            alert('this is inner click')
+            event.stopPropagation()
+        }
+    </script>
+</body>
+</html>

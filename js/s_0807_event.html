@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>事件</title>
+    <meta charset='UTF-8'>
+    <link rel="stylesheet" type="text/css" href='style.css'>
+</head>
+<body onload="done()">
+    <div class="div" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"></div>
+    <form>
+        <input type="text" onchange="change(this)">
+        <input type="text" onselect="selected(this)" onblur="selected(this)">
+    </form>
+    <script type="text/javascript">
+        function done() {
+            alert('网页加载完毕！')
+        }
+        function mouseOver(ooj) {
+            ooj.innerHTML = 'over'
+        }
+        
+        function mouseOut(ooj) {
+            ooj.innerHTML = 'out'
+        }
+        
+        function change(bg) {
+            bg.style.background = 'yellow';
+        }
+
+        function selected(bj) {
+            var content = bj.value
+            bj.value = content.toUpperCase()
+        }
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Object</title>
+    <meta content="text/javascript" charset="UTF-8">
+</head>
+<body>
+    <div id="div">hahahah</div>
+    <script type="text/javascript">
+        var name = 'ttttt'
+        function Person() {
+            var name = "lucy"
+            this.age = 30;
+            alert(this)
+        }
+        Person.prototype.headCount = 1;
+        var p = new Person();
+//        var p1 = new Person();
+        alert(this)
+
+        var o ={
+            name : 'dyw',
+            print : function () {
+                alert(this.name)
+            }
+        }
+        o.print()
+        var ff = o.print;
+        ff()
+        var ele = document.getElementById('div');
+        ele.addEventListener('click', function () {
+            alert(this.innerHTML)
+        })
+
+        function a(){
+            this.name = "dy";
+             this.age = 22;
+        }
+        a.prototype.gender = "female"
+        var a1 = new a();
+        var a2 = new a();
+    </script>
+</body>
+</html>

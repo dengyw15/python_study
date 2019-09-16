@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/Desktop/PycharmProjects/ccblib/.idea/ccblib.iml" filepath="$USER_HOME$/Desktop/PycharmProjects/ccblib/.idea/ccblib.iml" />
+      <module fileurl="file://H:/tmp/python/eipnews/.idea/eipnews.iml" filepath="H:/tmp/python/eipnews/.idea/eipnews.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/PycharmProjects/js/.idea/js.iml" filepath="$USER_HOME$/Desktop/PycharmProjects/js/.idea/js.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/pythonStudy.iml" filepath="$PROJECT_DIR$/.idea/pythonStudy.iml" />
+      <module fileurl="file://G:\Program Files (x86)\Python\Python36\Scripts\scrapytest\.idea\scrapytest.iml" filepath="G:\Program Files (x86)\Python\Python36\Scripts\scrapytest\.idea\scrapytest.iml" />
+      <module fileurl="file://C:\Users\dengyw\Desktop\PycharmProjects\webofscience\.idea\webofscience.iml" filepath="C:\Users\dengyw\Desktop\PycharmProjects\webofscience\.idea\webofscience.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/PycharmProjects/wos/.idea/wos.iml" filepath="$USER_HOME$/Desktop/PycharmProjects/wos/.idea/wos.iml" />
+      <module fileurl="file://H:/1项目相关/知识管理/手机APP/.idea/手机APP.iml" filepath="H:/1项目相关/知识管理/手机APP/.idea/手机APP.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>内置对象</title>
+    <meta content="text/javascript" charset="UTF-8">
+</head>
+<body onload="startTime()">
+    <div id="time"></div>
+    <script type="text/javascript">
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('time').innerHTML = h + ":" +m + ":" + s;
+            t = setTimeout(function() {
+                startTime();
+            }, 1000)
+        }
+        
+        function checkTime(i) {
+            if (i<10) {
+                i = '0' + i;
+            }
+            return i;
+        }
+
+//        var a = ['Hello', 'World'];
+//        var b = ['Lucy', 'Lily'];
+//        var c = a.concat(b);
+//        document.write(c);
+//        var d = a.sort();
+//        document.write(d)
+
+        document.write(Math.round(2.5))
+        document.write(parseInt(Math.random() * 10))
+
+    </script>
+</body>
+</html>
